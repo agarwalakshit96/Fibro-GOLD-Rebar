@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fibro Gold Brand Kit</title>
+<link rel="icon" href="logo/fibro-gold-favicon-dark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14161A; --graphite:#23272E; --steel:#4A4F57; --mist:#B9BDC4;
+  --warm:#F6F3EC; --white:#fff;
+  --gold:#C8A24A; --gold-deep:#9A7420; --gold-text:#7A5A12; --gold-light:#E6CF8E;
+  --bg:var(--warm); --fg:var(--ink); --muted:#4A4F57; --card:#fff; --line:#E3DED2;
+  --accent-text:var(--gold-text);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#0F1114; --fg:#F3F1EA; --muted:#B9BDC4; --card:#181B20; --line:#2A2F36; --accent-text:var(--gold); }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+@media(min-width:720px){.wrap{padding:0 32px}}
+header.hero{background:var(--ink);color:#fff;padding:72px 0 64px}
+header.hero img{width:min(440px,100%);height:auto;display:block}
+header.hero p{max-width:560px;color:var(--mist);margin:28px 0 0;font-size:17px}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:20px;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav.toc a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav.toc a:hover{color:var(--fg)}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);font-weight:700}
+h2{font:800 clamp(28px,4vw,40px)/1.15 Inter,sans-serif;margin:8px 0 12px;letter-spacing:-.02em}
+h3{font:700 18px/1.3 Inter,sans-serif;margin:0 0 6px}
+p.lead{max-width:62ch;color:var(--muted);margin:0 0 32px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.panel{border-radius:14px;padding:36px 28px;display:flex;align-items:center;justify-content:center;min-height:180px}
+.panel{flex-wrap:wrap;gap:16px}.panel img{max-width:100%;height:auto}
+.dark{background:var(--ink)} .light{background:#F6F3EC;border:1px solid #E3DED2} .goldbg{background:var(--gold)} .white{background:#fff;border:1px solid #E3DED2}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.cap{font-size:13px;color:var(--muted);margin-top:8px}
+.sw{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.sw .chip{height:96px;display:flex;align-items:flex-end;padding:10px 14px;font-weight:700;font-size:13px}
+.sw dl{margin:0;padding:12px 14px;font-size:13px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;color:var(--muted)}
+.sw dt{font-weight:600;color:var(--fg)} .sw dd{margin:0;font-variant-numeric:tabular-nums}
+.type-spec{display:grid;gap:4px;padding:18px 0;border-top:1px solid var(--line)}
+.type-spec:first-of-type{border-top:0}
+.display{font:800 clamp(34px,6vw,56px)/1.05 Inter,sans-serif;letter-spacing:-.025em}
+ul.clean{padding-left:18px;margin:0;color:var(--muted)} ul.clean li{margin:4px 0}
+.do,.dont{border-radius:14px;padding:18px 20px;border:1px solid var(--line);background:var(--card)}
+.do h3{color:#2D7A46} .dont h3{color:#B3402F}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .do h3{color:#6FCF8E} :root:not([data-theme="light"]) .dont h3{color:#F08A78}}
+.clear{position:relative;display:inline-block;padding:44px;background:repeating-linear-gradient(45deg,rgba(200,162,74,.18) 0 6px,transparent 6px 12px);border:1px dashed var(--gold)}
+.clear img{display:block;width:300px;max-width:100%;height:auto;background:var(--ink)}
+/* application mocks */
+.card-mock{aspect-ratio:1.75;border-radius:10px;padding:5% 6%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.card-mock img{width:62%;height:auto}
+.card-mock .who{font-size:12px;line-height:1.5}
+.card-mock .who b{font-size:14px;display:block}
+.post{aspect-ratio:1;border-radius:14px;background:var(--ink);color:#fff;padding:9%;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.post .big{font:800 clamp(26px,4.4vw,44px)/1.05 Inter,sans-serif;letter-spacing:-.02em}
+.post .big em{font-style:normal;color:var(--gold)}
+.post small{color:var(--mist);font-size:13px}
+.post .rib{position:absolute;right:-12%;top:-8%;width:52%;opacity:.12}
+.letter{background:#fff;color:#14161A;border-radius:6px;padding:7% 8%;aspect-ratio:.72;box-shadow:0 10px 30px rgba(0,0,0,.18);display:flex;flex-direction:column;font-size:11px}
+.letter img{width:46%;height:auto}
+.letter .lines span{display:block;height:6px;background:#E8E4D8;margin:8px 0;border-radius:3px}
+.letter .foot{margin-top:auto;border-top:1.5px solid #C8A24A;padding-top:8px;color:#4A4F57;font-size:10px}
+.note{border-left:3px solid var(--gold);padding:10px 16px;background:var(--card);border-radius:0 10px 10px 0;color:var(--muted);font-size:14px}
+footer{padding:40px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <img src="logo/fibro-gold-horizontal-dark.svg" alt="Fibro Gold by Fibrotech FRP">
+    <p>Brand kit v1 for the Fibro Gold GFRP rebar brand: logo, colour, type, voice and first applications. Certification wording follows the claims ladder and is updated once licences and test reports exist.</p>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#idea">Idea</a><a href="#logo">Logo</a><a href="#space">Space &amp; size</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#voice">Voice</a><a href="#claims">Claims</a><a href="#apps">Applications</a><a href="#rules">Rules</a>
+</div></nav>
+
+<main>
+<section id="idea"><div class="wrap">
+  <div class="eyebrow">The idea</div>
+  <h2>Strength, without corrosion.</h2>
+  <p class="lead">The mark is an <strong>F built from three rebar segments</strong>. The diagonal ribs are the helical surface of a GFRP bar, cut out of the gold so the mark works in one colour, on any background. Charcoal carries engineering authority; one restrained gold carries the premium. Most competitors sit in generic blue and green, so charcoal and gold is open ground.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Charcoal</h3><p class="cap" style="margin:0">Engineering weight, trust, readable in the field and in print.</p></div>
+    <div class="card"><h3>Gold</h3><p class="cap" style="margin:0">The premium cue. Used sparingly, never as a gradient or metallic effect.</p></div>
+    <div class="card"><h3>Ribbed F</h3><p class="cap" style="margin:0">Reads as rebar at a glance, and as the initial of Fibro.</p></div>
+  </div>
+</div></section>
+
+<section id="logo"><div class="wrap">
+  <div class="eyebrow">Logo</div>
+  <h2>Primary lock-ups</h2>
+  <p class="lead">Use the horizontal lock-up by default and the stacked one for square or narrow spaces. The endorsement line <strong>By Fibrotech FRP</strong> stays attached on first-contact material.</p>
+  <div class="grid g2">
+    <div><div class="panel dark"><img src="logo/fibro-gold-horizontal-dark.svg" alt="Horizontal logo on charcoal"></div><div class="cap">Horizontal, on charcoal (preferred)</div></div>
+    <div><div class="panel light"><img src="logo/fibro-gold-horizontal-light.svg" alt="Horizontal logo on warm white"></div><div class="cap">Horizontal, on warm white or white</div></div>
+    <div><div class="panel dark"><img src="logo/fibro-gold-stacked-dark.svg" alt="Stacked logo on charcoal" style="width:260px"></div><div class="cap">Stacked, on charcoal</div></div>
+    <div><div class="panel light"><img src="logo/fibro-gold-stacked-light.svg" alt="Stacked logo on warm white" style="width:260px"></div><div class="cap">Stacked, on warm white</div></div>
+  </div>
+  <h2 style="margin-top:48px;font-size:26px">One-colour and icon versions</h2>
+  <div class="grid g3" style="margin-top:12px">
+    <div><div class="panel white"><img src="logo/fibro-gold-horizontal-mono-black.svg" alt="Black logo"></div><div class="cap">Mono black: invoices, stamps, newsprint, fax-grade print</div></div>
+    <div><div class="panel" style="background:#2b2f36"><img src="logo/fibro-gold-horizontal-mono-white.svg" alt="White logo"></div><div class="cap">Mono white: photos, dark or coloured backgrounds</div></div>
+    <div><div class="panel dark"><img src="logo/fibro-gold-horizontal-mono-gold.svg" alt="Gold logo"></div><div class="cap">Mono gold: foil, emboss, engraving on charcoal</div></div>
+    <div><div class="panel" style="background:#2b2f36;padding:36px 12px;flex-wrap:nowrap;gap:12px"><img src="logo/fibro-gold-mark-dark.svg" alt="Mark" style="width:60px"><img src="logo/fibro-gold-app-icon-dark.svg" alt="App icon" style="width:60px"><img src="logo/fibro-gold-favicon-dark.svg" alt="Favicon" style="width:40px"></div><div class="cap">Mark, app icon, and solid favicon (ribs removed below ~32 px)</div></div>
+    <div><div class="panel white" style="padding:36px 12px;flex-wrap:nowrap;gap:12px"><img src="logo/fibro-gold-mark-light.svg" alt="Mark light" style="width:60px"><img src="logo/fibro-gold-app-icon-light.svg" alt="App icon light" style="width:60px"><img src="logo/fibro-gold-favicon-light.svg" alt="Favicon light" style="width:40px"></div><div class="cap">Same set for light surfaces</div></div>
+    <div><div class="panel goldbg"><img src="logo/fibro-gold-horizontal-mono-black.svg" alt="Black logo on gold"></div><div class="cap">On a gold field, use mono black</div></div>
+  </div>
+  <p class="note" style="margin-top:24px">Files: SVG masters and 4× transparent PNGs in <code>brand/logo/</code>. Wordmark letters are outlined from Inter Display Bold. A custom-drawn wordmark can replace them later without changing the mark or lock-ups.</p>
+</div></section>
+
+<section id="space"><div class="wrap">
+  <div class="eyebrow">Space &amp; size</div>
+  <h2>Clear space and minimum size</h2>
+  <div class="grid g2" style="align-items:center">
+    <div><div class="clear"><img src="logo/fibro-gold-horizontal-dark.svg" alt="Logo with clear space"></div></div>
+    <div>
+      <h3>Clear space</h3>
+      <p class="cap" style="font-size:15px;margin:0 0 16px">Keep free space around the logo equal to the <strong>width of the F's stem</strong> (about 1/6 of the mark height) on every side. Nothing else sits inside it.</p>
+      <h3>Minimum size</h3>
+      <ul class="clean">
+        <li>Horizontal lock-up: 32 mm wide in print, 140 px on screen.</li>
+        <li>Stacked lock-up: 20 mm wide in print, 96 px on screen.</li>
+        <li>Mark alone: 8 mm / 24 px. Below 32 px use the solid favicon (no ribs).</li>
+        <li>Under the minimum, drop the "By Fibrotech FRP" line before shrinking the logo, and use the mark alone.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="colour"><div class="wrap">
+  <div class="eyebrow">Colour</div>
+  <h2>Charcoal, gold, and quiet neutrals</h2>
+  <p class="lead">Roughly 60% charcoal or warm white, 30% neutrals, 10% gold. Gold is an accent for the mark, rules, key numbers and calls to action.</p>
+  <div class="grid g3">
+    <div class="sw"><div class="chip" style="background:#14161A;color:#fff">Fibro Ink</div><dl><dt>HEX</dt><dd>#14161A</dd><dt>RGB</dt><dd>20 22 26</dd><dt>CMYK*</dt><dd>75 66 60 80</dd><dt>Use</dt><dd>Backgrounds, text</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#C8A24A;color:#14161A">Fibro Gold</div><dl><dt>HEX</dt><dd>#C8A24A</dd><dt>RGB</dt><dd>200 162 74</dd><dt>CMYK*</dt><dd>20 33 82 2</dd><dt>On Ink</dt><dd>7.5:1 (AA, AAA large)</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#9A7420;color:#fff">Deep Gold</div><dl><dt>HEX</dt><dd>#9A7420</dd><dt>RGB</dt><dd>154 116 32</dd><dt>CMYK*</dt><dd>30 48 100 20</dd><dt>On Warm</dt><dd>3.9:1 (large text, graphics only)</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#7A5A12;color:#fff">Gold Text</div><dl><dt>HEX</dt><dd>#7A5A12</dd><dt>RGB</dt><dd>122 90 18</dd><dt>CMYK*</dt><dd>38 56 100 35</dd><dt>On Warm</dt><dd>5.7:1 (body text OK)</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#E6CF8E;color:#14161A">Light Gold</div><dl><dt>HEX</dt><dd>#E6CF8E</dd><dt>RGB</dt><dd>230 207 142</dd><dt>CMYK*</dt><dd>10 17 55 0</dd><dt>Use</dt><dd>Tints, highlights on Ink</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#23272E;color:#fff">Graphite</div><dl><dt>HEX</dt><dd>#23272E</dd><dt>RGB</dt><dd>35 39 46</dd><dt>CMYK*</dt><dd>75 65 55 70</dd><dt>Use</dt><dd>Cards on Ink</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#4A4F57;color:#fff">Steel</div><dl><dt>HEX</dt><dd>#4A4F57</dd><dt>RGB</dt><dd>74 79 87</dd><dt>CMYK*</dt><dd>65 55 45 40</dd><dt>On Warm</dt><dd>7.4:1</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#B9BDC4;color:#14161A">Mist</div><dl><dt>HEX</dt><dd>#B9BDC4</dd><dt>RGB</dt><dd>185 189 196</dd><dt>CMYK*</dt><dd>30 22 18 0</dd><dt>On Ink</dt><dd>9.6:1</dd></dl></div>
+    <div class="sw"><div class="chip" style="background:#F6F3EC;color:#14161A;border-bottom:1px solid #E3DED2">Warm White</div><dl><dt>HEX</dt><dd>#F6F3EC</dd><dt>RGB</dt><dd>246 243 236</dd><dt>CMYK*</dt><dd>3 3 7 0</dd><dt>Ink on it</dt><dd>16.3:1</dd></dl></div>
+  </div>
+  <p class="cap">*CMYK values are screen-to-print estimates. Match to a printed proof or Pantone/foil swatch before any print run. Small body text on light backgrounds uses Ink, Steel or Gold Text, never Fibro Gold or Deep Gold.</p>
+</div></section>
+
+<section id="type"><div class="wrap">
+  <div class="eyebrow">Typography</div>
+  <h2>Inter, everywhere</h2>
+  <p class="lead">One free family keeps the system fast and consistent across web, print and documents, and it matches the wordmark. Headlines in Inter Display or Inter ExtraBold with tight tracking; body in Inter Regular.</p>
+  <div class="card">
+    <div class="type-spec"><span class="cap">Display · Inter ExtraBold 800 · −2% tracking</span><div class="display">Reinforcement that does not rust.</div></div>
+    <div class="type-spec"><span class="cap">Heading · Inter Bold 700</span><div style="font:700 26px/1.25 Inter">Specification, test data and design guidance</div></div>
+    <div class="type-spec"><span class="cap">Body · Inter Regular 400, 16/1.6</span><div>Glass-fibre reinforced polymer bars do not corrode, which removes a main cause of concrete deterioration in roads, bridges and marine structures.</div></div>
+    <div class="type-spec"><span class="cap">Eyebrow · Inter Bold 700 · caps · +18% tracking</span><div style="font:700 12px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text)">Technical data</div></div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><h3>Hindi / Marathi</h3><p class="cap" style="margin:0">Noto Sans Devanagari, paired with Inter for numerals and units.</p></div>
+    <div class="card"><h3>Gujarati / Tamil</h3><p class="cap" style="margin:0">Noto Sans Gujarati / Noto Sans Tamil.</p></div>
+    <div class="card"><h3>Arabic (Gulf)</h3><p class="cap" style="margin:0">IBM Plex Sans Arabic or Noto Sans Arabic; mirror layouts right-to-left.</p></div>
+  </div>
+</div></section>
+
+<section id="voice"><div class="wrap">
+  <div class="eyebrow">Voice</div>
+  <h2>Plain, precise, proven</h2>
+  <div class="grid g2">
+    <div class="do"><h3>We say</h3><ul class="clean"><li>"Does not corrode."</li><li>"Datasheet and test report on request."</li><li>"Ask our design team before you specify."</li><li>"Lap length and cover: see the design guide."</li></ul></div>
+    <div class="dont"><h3>We avoid</h3><ul class="clean"><li>"World-class", "revolutionary", "unbeatable".</li><li>"India's largest / first / best."</li><li>"100-year life" or any lifespan without data.</li><li>"Stronger than steel" without saying in which property.</li></ul></div>
+  </div>
+  <p class="cap" style="margin-top:16px;font-size:15px">Full messaging, claims ladder and boilerplate: <code>brand/brand-foundation.md</code>.</p>
+</div></section>
+
+<section id="claims"><div class="wrap">
+  <div class="eyebrow">Claims</div>
+  <h2>Certification wording, by stage</h2>
+  <p class="lead">Every asset carries a swappable certification block so the wording changes in one place when a stage is reached.</p>
+  <div class="grid g2">
+    <div class="card"><h3>Now</h3><p class="cap" style="margin:0">Corrosion-free GFRP rebar. Specification and datasheet on request. No BIS, ISI, NHAI or standards-compliance wording.</p></div>
+    <div class="card"><h3>With independent test reports</h3><p class="cap" style="margin:0">"Tested to IS 18255:2023", report available to download.</p></div>
+    <div class="card"><h3>BIS application filed</h3><p class="cap" style="margin:0">"BIS licence applied (ref. ____)". Only with the reference on record.</p></div>
+    <div class="card"><h3>BIS licence granted</h3><p class="cap" style="margin:0">"BIS licensed – CM/L-_______" with the number, scope and plant exactly as on the licence.</p></div>
+  </div>
+</div></section>
+
+<section id="apps"><div class="wrap">
+  <div class="eyebrow">Applications</div>
+  <h2>The system in use</h2>
+  <p class="lead">First applications for review. Contact details are placeholders until supplied.</p>
+  <div class="grid g3" style="align-items:start">
+    <div>
+      <div class="card-mock" style="background:#14161A;color:#fff;margin-bottom:14px">
+        <img src="logo/fibro-gold-horizontal-dark.svg" alt="Fibro Gold">
+        <div class="who"><b>Name Surname</b><span style="color:#B9BDC4">Title · +91 00000 00000<br>name@company.com · fibrotechfrp.com</span></div>
+      </div>
+      <div class="card-mock" style="background:#F6F3EC;color:#14161A">
+        <img src="logo/fibro-gold-horizontal-light.svg" alt="Fibro Gold">
+        <div class="who"><b>Name Surname</b><span style="color:#4A4F57">Title · +91 00000 00000<br>name@company.com · fibrotechfrp.com</span></div>
+      </div>
+      <div class="cap">Business cards, dark and light (back: mark only on charcoal)</div>
+    </div>
+    <div>
+      <div class="post">
+        <img class="rib" src="logo/fibro-gold-mark-mono-gold.svg" alt="">
+        <small>GFRP REBAR</small>
+        <div class="big">Steel rusts.<br><em>Fibro Gold</em><br>does not.</div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end"><small>By Fibrotech FRP</small><img src="logo/fibro-gold-mark-dark.svg" alt="" style="width:44px"></div>
+      </div>
+      <div class="cap">Social post template (1:1). Headlines stay claim-safe: category facts only.</div>
+    </div>
+    <div>
+      <div class="letter">
+        <img src="logo/fibro-gold-horizontal-light.svg" alt="Fibro Gold">
+        <div class="lines" style="margin-top:22px"><span style="width:38%"></span><span style="width:100%"></span><span style="width:96%"></span><span style="width:99%"></span><span style="width:60%"></span><span style="width:100%"></span><span style="width:92%"></span></div>
+        <div class="foot">Fibrotech FRP · Address line, City, State PIN · GSTIN ______ · fibrotechfrp.com</div>
+      </div>
+      <div class="cap">Letterhead. Legal entity and GSTIN in the footer.</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="rules"><div class="wrap">
+  <div class="eyebrow">Rules</div>
+  <h2>Keep the mark intact</h2>
+  <div class="grid g2">
+    <div class="do"><h3>Do</h3><ul class="clean"><li>Use supplied SVG/PNG files; never redraw.</li><li>Use the dark version on charcoal, the light version on light surfaces.</li><li>Keep the By Fibrotech FRP line on first-contact material.</li><li>Place on plain areas of photos, or use the mono white version.</li></ul></div>
+    <div class="dont"><h3>Don't</h3><ul class="clean"><li>Stretch, rotate, outline, shadow, or add gradients or metallic effects.</li><li>Recolour the mark or wordmark outside the supplied sets.</li><li>Put the gold version on a mid-tone or busy background.</li><li>Separate "Fibro" and "Gold", or set the name in another font.</li></ul></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">Fibro Gold brand kit v1 · By Fibrotech FRP · Generated from <code>brand/tools/make_logo.py</code></div></footer>
+</body>
+</html>
