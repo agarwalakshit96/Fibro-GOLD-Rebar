@@ -14,3 +14,12 @@
 - Fibrotech FRP is the trust anchor (company history, plant, certifications); Fibro Gold carries the product identity.
 - Trademark: file "FIBRO GOLD" (word + logo) separately from Fibrotech; formal IP India search still pending (attorney).
 - Open: new standalone website vs a section of fibrotechfrp.com; to be decided after research.
+
+## Update – certification timing (owner, 2026-10-08)
+- Plant is not yet set up. BIS licence application happens after the plant exists; the process is lengthy (research: ~6 months from application, plus plant inspection).
+- Launch-phase assets must therefore NOT claim "BIS certified" / "BIS licensed" / ISI-mark. Allowed only once true:
+  - Now: brand story, product concept, applications, benefits, Fibrotech FRP credibility, "built to the IS 18256:2023 specification" ONLY if the owner confirms the design intent and wording is approved (still no compliance claim without third-party test reports).
+  - After NABL/third-party test reports exist: "tested to IS 18255:2023" with report downloads.
+  - After application filed: "BIS licence applied" (only with the application number on record).
+  - After grant: "BIS licensed – CM/L-xxxxxxx" with the number shown.
+- Design assets (website, brochure) should have a swap-in "certification" module so the claim ladder updates without redesign.
